@@ -25,7 +25,20 @@ const store = new Vuex.Store({
 
 ```
 
+## How to run the example
 
+```
+git clone  https://github.com/yyf1994gggg/vuex-chrome.git
+
+npm install
+
+cd example && npm install 
+
+npm run dev
+
+Drop the folder 'example/dist'  to 'chrome://extensions/'   to install extension
+
+```
 
 ![demo](https://github.com/yyf1994gggg/vuex-chrome/blob/master/example/demo.gif)
 
