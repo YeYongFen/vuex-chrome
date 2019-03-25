@@ -1,18 +1,16 @@
 {
-  "name": "vuex-extension-plugin",
-  "version": "0.0.1",
+  "name": "vuex-chrome-plugin",
+  "version": "0.1.0",
   "description": "A vuex plugin help you make the different state of page synchronized on chrome extendsion",
   "files": [
     "dist"
   ],
-
-  "main": "dist/vuex-chrome.js",
-  "module": "dist/vuex-chrome.es.js",
-  "jsnext:main": "dist/vuex-chrome.es.js",
-  "umd:main": "dist/vuex-chrome.umd.js",
+  "module": "dist/vuex-chrome-plugin.es.js",
+  "umd:main": "dist/vuex-chrome-plugin.umd.js",
+  "source": "src/index.js",
 
   "scripts": {
-    "build": "rimraf dist && microbundle --external all --entry ./src/index.js --compress false --sourcemap  false"
+    "build": "rimraf dist && microbundle --external all --entry ./src/index.js --compress false --sourcemap  true  --name VuexChromePlugin "
   },
 
   "keywords": [
@@ -45,5 +43,9 @@
   "peerDependencies": {
     "vue": ">=2.0.0",
     "vuex": ">=2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ynqc/git@github.com:yyf1994gggg/vuex-chrome.git"
   }
 }

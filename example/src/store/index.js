@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 // import VuexWebExtensions from '../../../dist/vuex-chrome.es';
-import VuexWebExtensions from '../../../src/index';
+import VuexChromePlugin from '../../../src/index';
 
 import * as getters from './getters';
 import mutations from './mutations';
@@ -17,6 +17,6 @@ export default new Vuex.Store({
   mutations,
   actions,
   plugins: [
-    VuexWebExtensions()
+    VuexChromePlugin()
   ],
 });

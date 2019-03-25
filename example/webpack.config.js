@@ -7,8 +7,6 @@ const ChromeExtensionReloader = require('webpack-chrome-extension-reloader');
 const { VueLoaderPlugin, } = require('vue-loader');
 const HtmlWebpackPlugin = require('vue-html-webpack-plugin');
 
-const { version, } = require('./package.json');
-
 function resolve (dir) {
   return path.join(__dirname, './', dir);
 }

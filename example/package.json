@@ -2,13 +2,11 @@
   "name": "vuex-webext-example",
   "version": "1.0.0",
   "description": "A webextension example for Vuex WebExtensions",
-  "author": "Mitsuha Kitsune <kitsunemitsuha@gmail.com>",
+  "author": "Fong Yee <602875520@qq.com>",
   "scripts": {
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --hide-modules",
-    "build:dev": "cross-env NODE_ENV=development webpack --hide-modules",
-    "build-zip": "node scripts/build-zip.js",
-    "watch": "npm run build -- --watch",
-    "watch:dev": "cross-env HMR=true npm run build:dev -- --watch"
+    "build:dev": "rimraf dist && cross-env NODE_ENV=development webpack --hide-modules",
+    "dev": "cross-env NODE_ENV=development HMR=true  webpack --hide-modules --watch"
   },
   "dependencies": {
     "vue": "^2.5.13",
@@ -42,7 +40,6 @@
     "webpack": "^4.14.0",
     "webpack-chrome-extension-reloader": "^0.6.7",
     "webpack-cli": "^3.0.8",
-    "webpack-shell-plugin": "^0.5.0",
-    "zip-folder": "^1.0.0"
+    "webpack-shell-plugin": "^0.5.0"
   }
 }
