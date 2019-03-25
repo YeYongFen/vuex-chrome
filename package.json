@@ -1,0 +1,49 @@
+{
+  "name": "vuex-extension-plugin",
+  "version": "0.0.1",
+  "description": "A vuex plugin help you make the different state of page synchronized on chrome extendsion",
+  "files": [
+    "dist"
+  ],
+
+  "main": "dist/vuex-chrome.js",
+  "module": "dist/vuex-chrome.es.js",
+  "jsnext:main": "dist/vuex-chrome.es.js",
+  "umd:main": "dist/vuex-chrome.umd.js",
+
+  "scripts": {
+    "build": "rimraf dist && microbundle --external all --entry ./src/index.js --compress false --sourcemap  false"
+  },
+
+  "keywords": [
+    "vuex",
+    "webextension",
+    "node",
+    "npm",
+    "firefox",
+    "chrome"
+  ],
+  "author": "Fong Yee",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.15.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "microbundle": "^0.11.0",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "vue": ">=2.0.0",
+    "vuex": ">=2.0.0"
+  }
+}

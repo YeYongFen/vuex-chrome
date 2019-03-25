@@ -1,0 +1,48 @@
+{
+  "name": "vuex-webext-example",
+  "version": "1.0.0",
+  "description": "A webextension example for Vuex WebExtensions",
+  "author": "Mitsuha Kitsune <kitsunemitsuha@gmail.com>",
+  "scripts": {
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --hide-modules",
+    "build:dev": "cross-env NODE_ENV=development webpack --hide-modules",
+    "build-zip": "node scripts/build-zip.js",
+    "watch": "npm run build -- --watch",
+    "watch:dev": "cross-env HMR=true npm run build:dev -- --watch"
+  },
+  "dependencies": {
+    "vue": "^2.5.13",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.1.6",
+    "css-loader": "^0.28.11",
+    "eslint": "^5.15.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "rimraf": "^2.6.3",
+    "vue-html-webpack-plugin": "^3.2.2",
+    "vue-loader": "^15.2.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^4.14.0",
+    "webpack-chrome-extension-reloader": "^0.6.7",
+    "webpack-cli": "^3.0.8",
+    "webpack-shell-plugin": "^0.5.0",
+    "zip-folder": "^1.0.0"
+  }
+}

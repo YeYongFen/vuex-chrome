@@ -1,0 +1,30 @@
+{
+  "name": "Vuex WebExtensions example",
+  "description": "A webextension example for Vuex WebExtensions",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_title": "Vuex WebExtensions example",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon_48.png",
+      "128": "icons/icon_128.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+     
+    }
+  ],
+  "permissions": ["https://github.com/*", "storage"],
+  "web_accessible_resources": ["content.js"]
+}
