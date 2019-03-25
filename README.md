@@ -11,7 +11,9 @@ npm install --save vuex-chrome-plugin
 ```
 
 The UMD build is also available on unpkg:
+```
 <script src="https://unpkg.com/vuex-chrome-plugin/dist/vuex-chrome-plugin.umd.js"></script>
+```
 
 You can get the library on window.VuexChromePlugin.
 ## Usage
